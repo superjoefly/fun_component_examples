@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>Image Overlay</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	  <style>
+
+		.container {
+			position: relative;
+			width: 50%;
+			margin: auto;
+		}
+
+		.image {
+			opacity: 1;
+			display: block
+			width: 100%
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+			filter: sepia(50%) drop-shadow(-4px -4px 8px blue);
+		}
+
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.container:hover .image {
+			opacity: .3;
+		}
+
+		.container:hover .middle {
+			opacity: 1;
+		}
+
+		.text {
+			background-color: #4caf50;
+			color: white;
+			font-size: 16px;
+			padding: 16px 32px;
+		}
+
+	  </style>
+
+	</head>
+
+	<body class="w3-margin">
+		<h1>Image Overlay</h1>
+
+		<p>Overlay effect to an image, on hover:</p>
+
+		<div class="container">
+			<img src="images/joefly.jpg" alt="avatar" class="image" style="width: 100%;" />
+			<div class="middle">
+				<div class="text">JoeFly</div>
+			</div>
+		</div>
+
+
+
+	</body>
+
+</html>

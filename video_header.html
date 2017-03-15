@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>Video Header</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <style>
+
+		body {
+			background-color: cyan;
+			color: white;
+		}
+
+		header {
+			text-align: center;
+			width: 100%;
+			height: auto;
+			background-color: pale-blue;
+		}
+
+		#vid {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+
+		#div2 {
+			text-align: center;
+		}
+
+
+	  </style>
+
+	</head>
+
+	<body>
+
+
+		<header>
+		<h1>True Story...</h1>
+			<p>I vape when I code :-)</p>
+
+		<div id="vid">
+			<video width="100%" height="auto" id="video1" muted autoplay>
+				<source src="video/header2.mp4" type="video/mp4" />
+			</video>
+			<button id="pausebtn" onclick="playPause()">Play/Pause</button>
+		</div>
+		</header>
+
+
+
+<!--
+		<header class="w3-display-container">
+			<video width="100%" height="auto" id="video1" muted autoplay>
+				<source src="video/header2.mp4" type="video/mp4" />
+			</video>
+			<div class="w3-display-middle w3-jumbo">
+				<p>Here is some more information.</p>
+			</div>
+			<button id="pausebtn" onclick="playPause()">Play/Pause</button>
+		</header>
+-->
+
+
+	<div id="div2">
+		<h3>Thanks for Visiting!</h3>
+	</div>
+
+
+		<script>
+		var myVideo = document.getElementById("video1");
+		function playPause() {
+			if (myVideo.paused)
+			myVideo.play();
+			else
+				myVideo.pause();
+		}
+		</script>
+
+		<script>
+		$('#video1').bind('ended', function() {
+			$(this).parent().fadeOut(3000)
+		});
+		</script>
+
+	</body>
+
+</html>
