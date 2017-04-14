@@ -1,9 +1,15 @@
+html {
+  margin-bottom: 50px;
+}
+
 
 body {
   background-color: skyblue;
 }
 
-
+p {
+  font-size: 1.2em;
+}
 
 
 
@@ -62,8 +68,8 @@ float: right;
 }
 
 #nav ul li a {
-font-size: 1em;
-padding: 5px 0;
+font-size: 1.2em;
+padding: 14px 16px;
 text-decoration: none;
 color: beige;
 transition: color 1s;
@@ -73,10 +79,13 @@ transition: color 1s;
   color: red;
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
 #nav ul li a {
-font-size: 1.2em;
-padding: 14px 16px;
+font-size: 1em;
+padding: 5px;
+}
+#nav ul li:nth-child(4) {
+  display: none;
 }
 p {
 font-size: 1em;

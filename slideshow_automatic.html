@@ -2,16 +2,16 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Automatic Slideshow</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	  <style>
 		  * {box-sizing:border-box}
-			
+
 			body {font-family: Verdana,sans-serif;}
-			
+
 			.mySlides {display:none}
 
 			/* Slideshow container */
@@ -65,12 +65,12 @@
 			}
 
 			@-webkit-keyframes fade {
-				from {opacity: .4} 
+				from {opacity: .4}
 				to {opacity: 1}
 			}
 
 			@keyframes fade {
-				from {opacity: .4} 
+				from {opacity: .4}
 				to {opacity: 1}
 			}
 
@@ -79,13 +79,13 @@
 				.text {font-size: 11px}
 			}
 	  </style>
-	  
+
 	</head>
-	
+
 	<body class="w3-margin">
 	<h1>CSS Automatic Slideshow</h1>
-	
-	<p>Change image every 2 seconds:</p>
+
+	<p>A slideshow that changes on its own!</p>
 
 	<div class="slideshow-container">
 
@@ -106,7 +106,7 @@
 		<img src="images/snow3.jpg" style="width:100%">
 		<div class="text">Caption Three</div>
 	</div>
-	
+
 	<div class="mySlides fade">
 		<div class="numbertext">3 / 4</div>
 		<img src="images/snow4.jpg" style="width:100%">
@@ -114,20 +114,20 @@
 	</div>
 
 	</div>
-	
+
 	<br>
 
 	<div style="text-align:center">
-		<span class="dot"></span> 
-		<span class="dot"></span> 
-		<span class="dot"></span> 
-		<span class="dot"></span> 
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
 	</div>
-	
+
 	<script>
 	var slideIndex = 0;
 	showSlides();
-	
+
 	function showSlides() {
 		var i;
 		var slides = document.getElementsByClassName("mySlides");
@@ -147,7 +147,7 @@
 		setTimeout(showSlides, 3000);
 	}
 	</script>
-	
+
 	</body>
 
 </html>
